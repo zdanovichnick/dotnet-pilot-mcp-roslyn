@@ -9,14 +9,14 @@
     <ToolCommandName>dnp-roslyn</ToolCommandName>
     <PackageId>DotnetPilot.Mcp.Roslyn</PackageId>
     <Title>DotnetPilot MCP Roslyn</Title>
-    <Version>0.3.2</Version>
+    <Version>0.4.0</Version>
     <Description>Roslyn-powered MCP server providing semantic C# code intelligence for DotnetPilot. Exposes 11 tools via Model Context Protocol: solution structure, class outlines, method bodies, find references, find implementations, DI analysis, architecture violation checking, and EF Core model introspection.</Description>
     <Authors>Nick Zdanovych</Authors>
     <RootNamespace>DotnetPilot.Mcp.Roslyn</RootNamespace>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Public nuget.org release of the DotnetPilot Roslyn MCP server with README, symbols, and repository metadata.</PackageReleaseNotes>
+    <PackageReleaseNotes>0.4.0: Bump ModelContextProtocol to 1.3.0 and Microsoft.Extensions.Hosting to 10.0.8. MSBuild compile-time deps aligned with .NET 10 SDK (Microsoft.Build.Framework 18.4.0).</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/zdanovichnick/dotnet-pilot-mcp-roslyn</PackageProjectUrl>
     <RepositoryUrl>https://github.com/zdanovichnick/dotnet-pilot-mcp-roslyn</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
