@@ -13,6 +13,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    environment: nuget-publish
 
     steps:
       - name: Checkout
