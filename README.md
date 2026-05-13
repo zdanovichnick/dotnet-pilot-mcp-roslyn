@@ -79,6 +79,17 @@ dnp-roslyn version
 
 ```bash
 dotnet tool update -g DotnetPilot.Mcp.Roslyn
+dnp-roslyn version    # confirm new version
+```
+
+> **Restart Claude Code after updating.** The MCP client spawns `dnp-roslyn` as a subprocess at session start, so a running session keeps the old binary in memory until you reload.
+
+**Other tool-management commands:**
+
+```bash
+dotnet tool list -g                                          # see installed version
+dotnet tool update -g DotnetPilot.Mcp.Roslyn --version 0.4.0 # pin to a specific version
+dotnet tool uninstall -g DotnetPilot.Mcp.Roslyn              # remove
 ```
 
 ### From source
