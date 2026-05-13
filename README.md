@@ -72,7 +72,7 @@ Verify:
 
 ```bash
 dnp-roslyn version
-# dnp-roslyn 0.3.2
+# dnp-roslyn 0.4.0
 ```
 
 ### Update to latest
@@ -774,7 +774,7 @@ The repository includes a release workflow at `.github/workflows/publish-nuget.y
 
 1. Add a repository secret named `NUGET_API_KEY`
 2. Update the version in `src/DotnetPilot.Mcp.Roslyn/DotnetPilot.Mcp.Roslyn.csproj`
-3. Create and push a tag such as `v0.3.3`
+3. Create and push a tag such as `v0.4.1`
 
 The workflow restores, builds, tests, packs, uploads the package artifacts, and pushes both the `.nupkg` and `.snupkg` files to `https://api.nuget.org/v3/index.json`.
 
