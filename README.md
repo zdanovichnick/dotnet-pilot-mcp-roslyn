@@ -635,13 +635,17 @@ brew install dotnet-sdk
 sudo apt-get install dotnet-sdk-10.0
 ```
 
-### "No .sln or .slnx file found"
+### "No .sln or .slnx file found" / "Failed to reconnect to roslyn"
 
-Run `dnp-roslyn` from a directory containing a solution file, or specify it explicitly:
+dnp-roslyn auto-detects the solution by searching the current directory and walking up parent directories. If you see this error (or `Failed to reconnect to plugin:dotnet-pilot:roslyn` in Claude Code), it means **Claude Code is not open in a .NET solution directory**.
+
+Fix: open Claude Code from the directory that contains your `.sln` or `.slnx` file, or specify the path explicitly:
 
 ```bash
 dnp-roslyn --solution path/to/MyApp.slnx
 ```
+
+This error is expected and harmless when using Claude Code outside a .NET project — the MCP server simply can't start without a solution to load.
 
 ### "Failed to load solution" / project load errors
 
